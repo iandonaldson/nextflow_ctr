@@ -1,5 +1,8 @@
 #!/usr/bin/env nextflow
 
+
+params.corralMandate = "$baseDir/mandates/corralMandate.csv"
+
 cheers = Channel.from 'Bonjour', 'Ciao', 'Hello', 'Hola'
 // comment
 
@@ -13,4 +16,5 @@ process sayHello {
     echo '$x world!'
     """
 }
+
 
